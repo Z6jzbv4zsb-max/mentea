@@ -1,15 +1,18 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from “next”;
+import “./globals.css”;
+import ThemeProvider from “./ThemeProvider”;
 
 export const metadata: Metadata = {
-  title: "Mentea - Salud Mental",
-  description: "Plataforma de soporte emocional.",
+title: “Mentea - Salud Mental”,
+description: “Plataforma de soporte emocional.”,
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="es">
-      <body className="bg-[#F9F8FC]">{children}</body>
-    </html>
-  );
+export default function RootLayout({
+children,
+}: {
+children: React.ReactNode;
+}) {
+return (
+{children}
+);
 }
