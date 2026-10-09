@@ -6,3 +6,53 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Mentea 2.0 — temas visuales */
+:root,
+[data-mentea-theme=“morado”] {
+–mentea-bg: #f7f3ff;
+–mentea-surface: #ffffff;
+–mentea-text: #30264a;
+–mentea-primary: #8064d8;
+–mentea-accent: #e9dfff;
+}
+
+[data-mentea-theme=“verde”] {
+–mentea-bg: #f1f8f2;
+–mentea-surface: #ffffff;
+–mentea-text: #203b2b;
+–mentea-primary: #3f8962;
+–mentea-accent: #d8efdf;
+}
+
+[data-mentea-theme=“azul”] {
+–mentea-bg: #f0f6ff;
+–mentea-surface: #ffffff;
+–mentea-text: #203451;
+–mentea-primary: #4b79c9;
+–mentea-accent: #dce9ff;
+}
+
+[data-mentea-theme=“rosa”] {
+–mentea-bg: #fff4f6;
+–mentea-surface: #ffffff;
+–mentea-text: #4b2935;
+–mentea-primary: #cb6e91;
+–mentea-accent: #ffe0e9;
+}
+
+html {
+background: var(–mentea-bg);
+}
+
+body {
+background-color: var(–mentea-bg);
+color: var(–mentea-text);
+transition: background-color 180ms ease, color 180ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+body {
+transition: none;
+}
+}
